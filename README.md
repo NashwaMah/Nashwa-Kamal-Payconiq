@@ -41,7 +41,7 @@
 ------------------------------------------------
 * To Update Test data for products to be added in cart :
 
-      Update json file ../Conduit_Automation/test-helpers/test-data/products.json
+      Update json file ../SauceLabs_Automation/test-helpers/test-data/products.json
 
 ------------------------------------------------
 * To Generate Allure report run below command in Terminal:
