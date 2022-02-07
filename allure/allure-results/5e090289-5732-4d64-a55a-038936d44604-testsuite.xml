@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1644243701482' stop='1644243701482'>
+    <name>Product Order</name>
+    <title>Product Order</title>
+    <test-cases>
+        <test-case start='1644243701482' status='passed' stop='1644243706052'>
+            <name>Add Products to Cart from Home Page</name>
+            <title>Add Products to Cart from Home Page</title>
+            <labels>
+                <label name='feature' value='Add Products to Cart from Home Page'/>
+                <label name='story' value='Product Order'/>
+                <label name='severity' value='Critical'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='User Agent' value='Add Products to Cart from Home Page'/>
+                <parameter kind='argument' name='JIRA story link' value='https://jira.example.ca/browse/Log in'/>
+                <parameter kind='argument' name='Jira test link' value='https://jira.example.ca/secure/Tests.jspa#/testCase/Aut-003'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test has been passed.</message>
+                <stack-trace>no error</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
