@@ -1,0 +1,6 @@
+{
+    "username": "input[data-test='username']",
+    "Password": "input[data-test='password']",
+    "submitBtn": "input[data-test='login-button']",
+    "loginContainer": "#login_button_container"
+}

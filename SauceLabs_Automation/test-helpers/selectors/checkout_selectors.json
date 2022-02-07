@@ -1,0 +1,12 @@
+{
+    "firstname": "input[data-test='firstName']",
+    "lastname": "input[data-test='lastName']",
+    "postalcode": "input[data-test='postalCode']",
+    "continuo": "input[data-test='continue']",
+    "finishCheckout": "button[data-test='finish']",
+    "productPrice": ".inventory_item_price",
+    "summarytax": ".summary_tax_label",
+    "summarytotal": ".summary_total_label",
+    "completeheader": ".complete-header",
+    "completetext": ".complete-text"
+}

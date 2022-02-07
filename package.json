@@ -1,0 +1,39 @@
+{
+  "name": "saucelabs-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+
+    "test:chrome": "testcafe chrome  ./SauceLabs_Automation/tests --reporter allure,html:HTML-Reports/saucelabs.html -s takeOnFails=true,path=artifacts/screenshots/saucelabs,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
+    "test:firefox": "testcafe firefox  ./SauceLabs_Automation/tests  --reporter allure,html:HTML-Reports/saucelabs.html -s takeOnFails=true,path=artifacts/screenshots/saucelabs,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
+    "test:edge": "testcafe edge  ./SauceLabs_Automation/tests  --reporter allure,html:HTML-Reports/saucelabs.html -s takeOnFails=true,path=artifacts/screenshots/saucelabs,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
+    "test:safari": "testcafe safari  ./SauceLabs_Automation/tests  --reporter allure,html:HTML-Reports/saucelabs.html -s takeOnFails=true,path=artifacts/screenshots/saucelabs,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
+    "test:samsung": "testcafe chrome:emulation:device=Pixel 2  ./SauceLabs_Automation/tests  --reporter allure,html:HTML-Reports/saucelabs.html -s takeOnFails=true,path=artifacts/screenshots/saucelabs,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true",
+    "test:iphone": "testcafe chrome:emulation:device=iphone X  ./SauceLabs_Automation/tests  --reporter allure,html:HTML-Reports/saucelabs.html -s takeOnFails=true,path=artifacts/screenshots/saucelabs,pathPattern='${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${TEST}_${FILE_INDEX}.png' --skip-js-errors --disable-page-caching ,spec --video artifacts/videos --video-options singleFile=true"
+  },
+  "repository": { 
+    "type": "git",
+    "url": "git+https://github.com/NashwaMah/Nashwa-Kamal-Payconiq.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NashwaMah/Nashwa-Kamal-Payconiq/issues"
+  },
+  "homepage": "https://github.com/NashwaMah/Nashwa-Kamal-Payconiq#readme",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "allure": "0.0.0",
+    "allure-commandline": "^2.13.0",
+    "date": "^1.0.2",
+    "dotenv": "^8.2.0",
+    "form-data": "^3.0.0",
+    "testcafe": "^1.16.1",
+    "testcafe-reporter-allure": "^1.0.5",
+    "testcafe-reporter-html": "^1.4.6"
+  },
+  "devDependencies": {
+    "testcafe-reporter-allure-plus": "^1.1.1"
+  }
+}

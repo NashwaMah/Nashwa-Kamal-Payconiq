@@ -1,0 +1,4 @@
+{
+   "itemsname": ".inventory_item_name",
+   "checkout": "button[data-test='checkout']"
+}

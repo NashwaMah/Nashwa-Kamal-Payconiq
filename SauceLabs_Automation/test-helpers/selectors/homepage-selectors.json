@@ -1,0 +1,6 @@
+{
+    "shoppingcart": "#shopping_cart_container",
+    "shoppingcartcount": ".shopping_cart_badge",
+    "menu_btn": "#react-burger-menu-btn",
+    "logout": "#logout_sidebar_link"
+}
