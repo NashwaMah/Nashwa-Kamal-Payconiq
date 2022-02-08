@@ -29,7 +29,6 @@ class CartPage {
     }
     async CheckoutOrder() {
         await t.click(this.checkout)
-        console.log("checkout")
     }
 
 

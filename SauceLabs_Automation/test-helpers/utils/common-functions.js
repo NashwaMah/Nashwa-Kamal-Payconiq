@@ -1,7 +1,6 @@
-require('dotenv').config()
 import { t, Role } from 'testcafe'
 import LoginPage from '../../models/pages/login_page.js'
-import login_credentials from '../test-data/login-credentials.json'
+const login_credentials = require('../test-data/login-credentials').login_credentials
 
 
 export async function assertEqual(actualResult, expectedResult) {
