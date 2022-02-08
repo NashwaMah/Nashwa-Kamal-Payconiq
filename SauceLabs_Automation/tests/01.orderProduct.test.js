@@ -1,10 +1,10 @@
-import login_credentials from '../test-helpers/test-data/login-credentials.json'
 import * as common_functions from '../test-helpers/utils/common-functions'
 import ProductPage from '../models/pages/products_page'
 import CartPage from '../models/pages/cart_page'
 import CheckoutPage from '../models/pages/checkout_page'
 import checkout_details from '../test-helpers/test-data/checkout_details.json'
 const products = require('../test-helpers/test-data/products.json').products
+const login_credentials = require('../test-helpers/test-data/login-credentials').login_credentials
 const product_page = new ProductPage()
 const cart_page = new CartPage()
 const checkout_page = new CheckoutPage()
@@ -24,11 +24,8 @@ test.meta({
 })
 
     ('Add Products to Cart from Home Page', async t => {
-        console.log("-------Start Test --------")
         await product_page.CheckRemoveButton(products)
         await product_page.ValidateCartProductCount(products)
-        console.log("------ End Test --------")
-
     })
 
 test.meta({
@@ -39,12 +36,9 @@ test.meta({
 })
 
     ('Remove Products from Cart page ', async t => {
-        console.log("-------Start Test --------")
         await product_page.OpenCart()
         await product_page.RemoveProducts(products)
         await cart_page.ValidateCartItemsRemoved(products)
-        console.log("------ End Test --------")
-
     })
 
 test.meta({
@@ -55,7 +49,6 @@ test.meta({
 })
 
     ('Perform Checkout', async t => {
-        console.log("-------Start Test --------")
         await product_page.OpenCart()
         await cart_page.ValidateCartItemsAdded(products)
         await cart_page.CheckoutOrder()
@@ -63,8 +56,6 @@ test.meta({
         await checkout_page.CheckTotalPrice()
         await checkout_page.FinishCheckout()
         await checkout_page.ValidateCheckoutMessage(checkout_details)
-        console.log("------ End Test --------")
-
     })
 
 
