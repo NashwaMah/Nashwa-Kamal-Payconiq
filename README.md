@@ -18,8 +18,15 @@
           npm install --save @ffmpeg-installer/ffmpeg
           npm install testcafe-reporter-allure
           npm install -g allure-commandline
+          npm install dotenv
 
-    3) Download Java for Allure report              
+    3) Download Java for Allure report   
+    4) Create new file with name .env and add data as below:
+           
+           saucedemoURL="https://www.saucedemo.com/"
+           username= "standard_user"
+           password= "secret_sauce"   
+                     
 --------------------------                    
 
 * To Run SauceLabs automation on run below command in Terminal according in which browser you need to test :
@@ -35,7 +42,7 @@
 
 * To Update Test data for Saucelab Sign in :
 
-      Update json file ../SauceLabs_Automation/test-helpers/test-data/login-credentials.json
+      Update Values in .env file created
 
 
 ------------------------------------------------
